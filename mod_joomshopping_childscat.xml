@@ -17,6 +17,7 @@
 	</languages>
 	<files>
 		<filename module="mod_joomshopping_childscat">mod_joomshopping_childscat.php</filename>
+		<folder>assets</folder>
 		<folder>tmpl</folder>
 		<filename>helper.php</filename>
 		<filename>index.html</filename>
