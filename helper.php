@@ -10,22 +10,20 @@
 
 defined('_JEXEC') or die;
 
-class modParentcatHelper
+class modJoomshoppingChildscatHelper
 {
 	public static function getParentcategory(&$params)
 	{
 
-		$cid = JRequest::getInt( 'category_id' ); //++
-
-		$lang = JSFactory::getLang();
-
-		$db = JFactory::getDbo();
+		$cid   = JRequest::getInt('category_id');
+		$lang  = JSFactory::getLang();
+		$db    = JFactory::getDbo();
 		$query = $db->getQuery(true);
-		$query->select('`category_id` AS id, `'.$lang->get('name').'` AS name');
+		$query->select('`category_id` AS id, `' . $lang->get('name') . '` AS name');
 		$query->from('#__jshopping_categories');
 		$query->where('category_parent_id > 0');
 		$query->where('category_publish = 1');
-		$query->where('category_parent_id ='.$cid); //++
+		$query->where('category_parent_id =' . $cid);
 		$query->order('ordering DESC');
 		$db->setQuery($query);
 

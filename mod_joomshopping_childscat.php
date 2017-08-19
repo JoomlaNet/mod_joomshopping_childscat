@@ -10,7 +10,7 @@
 
 defined('_JEXEC') or die;
 
-require_once dirname(__FILE__).'/helper.php';
-$categories = modParentcatHelper::getParentcategory($params);
+require_once dirname(__FILE__) . '/helper.php';
+$categories = modJoomshoppingChildscatHelper::getParentcategory($params);
 
-require JModuleHelper::getLayoutPath('mod_parentcat', $params->get('layout', 'default'));
+require JModuleHelper::getLayoutPath('mod_joomshopping_childscat', $params->get('layout', 'default'));
