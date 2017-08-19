@@ -9,8 +9,8 @@
  */
 
 defined('_JEXEC') or die;
-
 require_once dirname(__FILE__) . '/helper.php';
+$image_category_path = "/components/com_jshopping/files/img_categories";
+$noimage = "noimage.gif";
 $categories = modJoomshoppingChildscatHelper::getParentcategory($params);
-
 require JModuleHelper::getLayoutPath('mod_joomshopping_childscat', $params->get('layout', 'default'));
