@@ -7,3 +7,15 @@
  * @license    GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
  * @link       https://joomlanet.ru
  */
+
+defined('_JEXEC') or die();
+?>
+<ul class="pc_list">
+	<?php
+	foreach ($categories as $category)
+	{
+		$link = SEFLink('index.php?option=com_jshopping&controller=category&task=view&category_id=' . $category->id, 1);
+		echo '<li class="pc_item_list"><a href="' . $link . '">' . $category->name . '</a></li>';
+	}
+	?>
+</ul>
