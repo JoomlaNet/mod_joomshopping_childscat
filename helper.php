@@ -20,6 +20,7 @@ class modJoomshoppingChildscatHelper
 		$db    = JFactory::getDbo();
 		$query = $db->getQuery(true);
 		$query->select('`category_id` AS id, `' . $lang->get('name') . '` AS name');
+		$query->select('`category_image` AS image');
 		$query->from('#__jshopping_categories');
 		$query->where('category_parent_id > 0');
 		$query->where('category_publish = 1');
