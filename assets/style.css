@@ -7,3 +7,12 @@
  * @link       https://joomlanet.ru
  */
 
+
+li.js_childscat_list {
+	display: inline-block;
+	border: 1px solid #ECECEC;
+	border-radius: 5px;
+	padding: 10px;
+	margin-left: 10px;
+	text-align: center;
+}

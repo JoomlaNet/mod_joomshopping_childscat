@@ -9,6 +9,7 @@
  */
 
 defined('_JEXEC') or die;
+
 ?>
 
 <ul class="js_childscat">
@@ -16,6 +17,7 @@ defined('_JEXEC') or die;
 	foreach ($categories as $category)
 	{
 		$link = SEFLink('index.php?option=com_jshopping&controller=category&task=view&category_id=' . $category->id, 1);
+		JHtml::stylesheet(JURI::base().'/modules/mod_joomshopping_childscat/assets/style.css',array(),true);
 		echo
 			'<a class="js_childscat_a" href="' . $link . '"><li class="js_childscat_list">
              <div class="js_childscat_img">
