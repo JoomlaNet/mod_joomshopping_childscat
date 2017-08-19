@@ -8,7 +8,7 @@
  * @link       https://joomlanet.ru
  */
 
-defined('_JEXEC') or die();
+defined('_JEXEC') or die;
 ?>
 <ul class="pc_list">
 	<?php
