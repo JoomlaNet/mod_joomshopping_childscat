@@ -27,6 +27,7 @@ defined('_JEXEC') or die;
                     title="' . htmlspecialchars($category->name) . '"/>
              </div>
                     <div class="js_childscat_title">' . $category->name . '</div>
+		    <div class="desck_children">'.$category->descript.'</div>
             </li></a>';
 	}
 	?>
